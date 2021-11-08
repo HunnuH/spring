@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- 템플릿 등록 -->
+	<definition name="indexTemplate" template="/WEB-INF/">
+		<put-attribute name="top" value="/WEB-INF/include/top.jsp"/>
+	</definition>
+	
+	<definition name="mainTemplate" template="/WEB-INF/">
+		<put-attribute name="top" value="/WEB-INF/include/top.jsp"/>
+	</definition>
+	
+	<definition name="index" extends="indexTemplate">
+	</definition>
+	
+	
+</tiles-definitions>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+	   
+	   <bean id="dao" class="di.basic.MemberDAO" />
+	   <bean id="insa" class="di.basic.InsaImpl" >
+	   	<constructor-arg>
+	   		<ref bean="dao"/>		
+	   	</constructor-arg>
+	   </bean>
+	   <bean id="logic" class="di.construct01.LogicImpl"/>
+ 	   <bean id="cloud" class="di.construct01.CloudLogicImpl"/>	
+	   <bean id="service" class="di.construct01.MyServiceImpl">
+	   	
+	   	<constructor-arg value="강동원"/>
+	   	<constructor-arg>
+	   		<value>안녕</value>
+	   	</constructor-arg>
+	   	<constructor-arg ref="cloud"/>
+	   </bean>
+	   
+	   <bean id="dice" class="di.construct02.Dice"/>
+	   <bean id="player" class="di.construct02.Player">
+	   			<constructor-arg ref="dice"/>
+	   </bean>
+	   
+	   <bean id="sql" class="di.construct03.MysqlArticleDAO"/>
+	   <bean id="oracle" class="di.construct03.OracleArticleDAO"/>
+	   <bean id="mgr" class="di.construct03.WriteArticleMgr">
+	   		<constructor-arg ref="sql"/>
+	   </bean>
+	   		
+</beans>

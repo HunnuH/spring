@@ -1,0 +1,48 @@
+@charset "UTF-8";
+ #garden{
+									background-image: url("../../images/background.gif");
+									background-repeat:no-repeat;
+									background-color:#a5cbcb;
+									border: solid white 1px;
+									letter-spacing: -1px;
+									font-style:italic;
+									padding-left:85px;
+									padding-bottom: 40px;
+									padding-top: 30px;
+									padding-right:30px;
+					          		margin: 30px;
+					}
+				#m0{
+									width: 75%;
+									margin-left: auto;
+									margin-right: auto;
+									text-align: justify;
+									font-size: 9pt;
+					}
+				#a1{				
+									color:#a5cbcb;
+					}
+				#m1{
+									width: 60%;
+									float:right;
+					}
+				#m4{
+									width: 60%;
+									float:right;
+					}
+				#garden02{
+									border : #a5cbcb solid 3px;
+									width:20%; 
+					  				float:right;
+					  				margin-left: 30px;
+					  				text-align: center; 
+					}
+				#footer{
+									clear:both;
+									text-align: center;
+					}
+				.m2{
+					  				color: red;
+				}
+						  		
+					

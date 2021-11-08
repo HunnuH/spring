@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+				function showData(zip,addr) {
+					//alert(zip);
+					//alert(addr);
+					opener.document.sds.zipcode.value = zip;
+					opener.document.sds.address.value = addr;
+					window.close;
+				}
+				function setValue(){
+					//alert("로딩중")
+					window.document.mypopup.id.value=opener.document.sds.id.value;
+					//                                              setter                                       getter
+				}
+</script>
+</head>
+<body bgcolor="skyblue"  onload="setValue()">
+				<form name="mypopup">
+							<input type="text" name="id"  >
+							<input type= "submit" value="검색" >
+				</form>
+				<a href="javascript:showData('111-111', '서울시')" >서울</a><br/>
+				<a href="javascript:showData('122-122', '대구시')" >대구</a><br/>
+				<a href="javascript:showData('133-133', '울산시')" >울산</a><br/>
+				<a href="javascript:showData('144-144', '부산시')" >부산</a><br/>
+				<a href="javascript:showData('155-155', '대전시')" >대전</a><br/>
+
+</body>
+</html>

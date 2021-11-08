@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+				#outer{
+							background-color: yellow;
+							width: 500px;
+							position: absolute;
+							top:100px;
+							left: 100px;
+							height: 500px;
+				}
+				#m1{
+				background-color: red;
+				width: 100px;
+				position: static;/*  원래 가본흐름 */
+				left: 70;
+				top: 10px;
+				}
+				#m2{
+				background-color: skyblue;
+				width: 100px;
+				position: relative;/* 원래 자신의 위치로부터 정의된 자푱의 위치만틈 이동*/
+				left: 70px;
+				top: 10px;
+				margin: 30px;
+				padding-left: 50px;
+				
+				}
+				#m3{
+				background-color: pink;
+				width: 100px;
+				position: absolute;  /*지정된 좌표를 기준으로 배치(부모의 위치를 기준으로 배치) */
+				left: 70px;
+				top:10px
+				}
+				#m4{
+				background-color: green;
+				width: 100px;
+				position: fixed;/*  문서의 왼쪽위가 기준 (부모의  위치의 영향을 받지않고 고정된 위치) */
+				left: 70px;
+				top:20px;
+				}
+				#m5{
+				background-color: gray;
+				width: 100px;
+				position: absolute; /* absolute는 도큐먼트 기준이므로 윈도우의 해상도와 상관없이 무조건 보임  */
+				left: 1000px;
+				top:1800px;
+				}
+				#m6{
+				background-color: orange;
+				width: 100px;
+				position: fixed; /*  fixed는 윈도우 기준이므로 해상도를 벗어나면 보이지 않는다.  범위내에서는 고정위치로 존재 */
+				left: 1000px;
+				top:1800px;
+				}
+</style>
+</head>
+<body>
+ 		<div id="outer">
+			<div id="m1">1</div>
+			<div id="m2">2</div>
+			<div id="m3">3</div>
+			<div id="m4">4</div>
+			<div id="m5">5</div>
+			<div id="m6">6</div>
+			</div>
+
+</body>
+</html>

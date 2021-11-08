@@ -1,0 +1,20 @@
+@charset "UTF-8";
+ #garden{
+				background-image: url("../../images/background.gif");
+				background-repeat:no-repeat;
+				background-color:#a5cbcb;
+				border: solid white 1px;
+				letter-spacing: -1px;
+				font-style:italic;
+				padding-left:85px;
+				padding-bottom: 40px;
+				padding-top: 30px;
+				padding-right:30px;
+          		margin: 30px;
+}
+body{
+	font-size: 9pt;
+}
+h1{
+	color:#a5cbcb
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+			<h1>양식태그</h1>
+			<form action="">
+					<input type="month"><br/>
+					<input type="color"><br/>
+					<input type="number"><br/>
+					<h2>1.텍스트 관련 태그</h2>
+							아이디   : <input type="text"  size="23"  maxlength="10"  name="id" /><br/>
+							비밀번호 : <input type="password"  name="pass"/><br/>
+							정보:<br/>
+							<textarea rows="10" cols="100"  name="info">자기소개</textarea>
+							
+					<h2>1.버튼 관련 태그</h2>
+							<input type="button"  value="자바스트립트 명령문을 실행할 목적으로 제공되는 버튼" onclick="alert('안녕')">
+							<input type="submit" value="서버로 데이터를 전송">
+							<input type="reset" value="데이터 지우기(취소)">
+							<button>확인</button>
+							<input type="image"  src="/clientweb/images/drinks.gif " />	<br/>	
+							
+					<h2>3.선택 관련 태그</h2>
+							좋아하는 과목1<br/>
+							<input type="checkbox" name="subject1" value="자바">자바
+							<input type="checkbox" name="subject1" value="서블릿">서블릿
+							<input type="checkbox" name="subject1" value="jsp">jsp
+							<input type="checkbox" name="subject1" value="jdbc">jdbc
+							
+							<br/><br/>
+							좋아하는 과목2<br/>
+							<fieldset style="width: 300px">
+							<legend>빅데이터</legend>
+							<input type="radio" name="subject2" value="hadoop">hadoop
+							<input type="radio" name="subject2" value="spark">spark
+							</fieldset>
+							<fieldset style="width: 300px">
+							<legend>IOT</legend>
+							<input type="radio" name="subject3" value="can">can
+							<input type="radio" name="subject3" value="mqtt"  checked="checked">mqtt	
+							</fieldset>
+							
+							<br/><br/>
+							좋아하는 과목4<br/>
+							<select name="subject4">
+									<option value="java">java</option>
+									<option value="android">android</option>
+									<option value="아두이노">아두이노</option>
+									<option value="라즈베리파이">라즈베리파이</option>
+									<option value="flume">flume</option>
+							</select>
+							
+							<br/><br/>
+							좋아하는 과목5<br/>
+							<select name="subject5"  size="10"  multiple="multiple">
+									<option value="java">java</option>
+									<option value="android">android</option>
+									<option value="아두이노">아두이노</option>
+									<option value="라즈베리파이">라즈베리파이</option>
+									<option value="flume">flume</option>
+							</select>
+									
+							</form>
+</body>
+</html>

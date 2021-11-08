@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<script type="text/javascript">
+			//result = countval * 12900 * 0.9;
+			$(document).ready(function(){
+				$("#countVal").on("keyup",function(){
+					myval = parseInt($("#countVal").val())*12900*0.9;
+					$("#sumval").text(myval);
+				});
+			});
+			</script>
+</head>
+<body>
+	<form  name = "myform">
+			수량 : <input type="text" name="count"  id="countVal" >
+					<span id="sumval"  style = "color:red;"></span>
+	</form>
+</body>
+</html>

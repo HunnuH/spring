@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+			function rel(){
+				countval = myform.count1.value;
+				countval2 = myform.price1.value;
+				result =  countval * countval2
+				document.getElementById("sumval").innerHTML = result;
+			}
+			function rel2(){
+				countval3 = myform.count2.value;
+				countval4 = myform.price2.value;
+				result =  countval3 * countval4
+				document.getElementById("sumval2").innerHTML = result;
+			}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<table border="1" width="800">
+			<tr>
+				<td><input type="checkbox" name="allchk"/>항목명</td>
+				<td>상품정보</td>
+				<td>수량</td>
+				<td>판매가</td>
+				<td>구매예정가</td>
+			</tr>
+			<tr>
+			
+				<td><input type="checkbox" name="prd"/>완도미역</td>
+				<td><img src="../images/pro1.jpg"/></td>
+				<td><input type="text" name="count1" value="1" onkeyup="rel()"/></td>
+				<td><input type="text" name="price1" value="6900" onkeyup="rel()" /><span>원</span></td>
+				<td><span id="sumval" ></span><span>원</span></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="prd"/>스카트 빨아쓰는 휴지</td>
+				<td><img src="../images/pro2.jpg"/></td>
+				<td><input type="text" name="count2" value="1"  onkeyup="rel2()"/></td>
+				<td><input type="text" name="price2" value="7800" onkeyup="rel2()"/><span>원</span></td>
+				<td><span id="sumval2" ></span><span>원</span></td>
+			</tr>
+			<tr>
+				<td colspan="6" align="right"><span id="totalprice"></span><span>원</span></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

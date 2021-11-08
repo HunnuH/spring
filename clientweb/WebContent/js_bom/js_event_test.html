@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+			<script type="text/javascript">
+			function calc() {
+				mynum1 = parseInt(myform1.num1.value);
+				myform1.num2.value = mynum1+10000;
+			}
+			function showdata(currentform) {
+				mynum1 = parseInt(currentform.num1.value);
+				currentform.num2.value = mynum1+10000;
+			}
+			</script>
+</head>
+<body>
+			<form action="" name=myform1>
+						<input type="text" name="num1" onchange="calc()">
+						<input type="text" name="num2">
+			</form>
+			<form action="" name=myform2>
+						<input type="text" name="num1" onkeyup="showdata(this.form)">
+						<input type="text" name="num2">
+			</form>
+			<form action="" name=myform3>
+						<input type="text" name="num1" onkeyup="showdata(this.form)">
+						<input type="text" name="num2">
+			</form>
+			<form action="" name=myform4>
+						<input type="text" name="num1" onkeyup="showdata(this.form)">
+						<input type="text" name="num2">
+			</form>
+						<img  src="../images/ses_g1.jpg"  name="myimg "  onmouseover="img.src='../imges/ses_g2.jpg' "
+																										onmouseout="img.src='../imges/ses_g1.jpg' ">
+</body>
+</html>

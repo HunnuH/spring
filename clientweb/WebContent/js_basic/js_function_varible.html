@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+			num1=100;
+			var num4 =400;
+			
+			function test1() {
+				num2=200;
+				var num3 =300;
+				
+				document.write("test1 함수 num1 > " +num1+"<br/>");
+				document.write("test1 함수 num2 > " +num2+"<br/>");
+				document.write("test1 함수 num3 > " +num3+"<br/>");
+				document.write("test1 함수 num4 > " +num4+"<br/>");
+				document.write("<hr/>");
+			}
+			function test2() {
+				document.write("test2 함수 num1 > "+num1+"<br/>");
+				document.write("test2 함수 num2 > "+num2+"<br/>");
+			/* 	document.write("test2 함수 num3 > " +num3+"<br/>"); */
+				document.write("test2 함수 num4 > " +num3+"<br/>");
+				document.write("<hr/>");
+			}
+</script>
+</head>
+<body>
+			<script type="text/javascript">
+			
+			test1();
+			test2();
+			
+			document.write ("body에서 num1 > "+num1+"<br/>");
+			document.write ("body에서 num2 > "+num2+"<br/>");
+			/* document.write ("body에서 num3 > "+num3+"<br/>"); */
+			document.write ("body에서 num4 > "+num4+"<br/>");
+			document.write("<hr/>");
+			</script>
+</body>
+</html>

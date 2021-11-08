@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+			<div id="main">
+					<div class="test1">jquery~~~</div>
+					<div class="test2">jquery~~~</div>
+					<div id="test3">jquery~~~</div>
+					<div id="test4">jquery~~~</div>
+					<div id="test5">jquery~~~</div>
+			</div>
+			<form>
+					<input type="button" id="nodetest"  value="노드가져오기">
+            </form>
+            <script type="text/javascript">
+            		$(document).ready(function() {
+            			$("#nodetest").on("click", function() {
+            			list = $("#main").children();	
+            			alert(list.length);
+            			$("#main").children().css("color","orange");
+            			$("#main").children().last().css("color","red");
+            			$("#main").children().first().css("color","blue");
+            			data = $("<p>newP</p>");
+            			data.css("background","yellow");
+            			$("#main").append(data);
+            			});
+            		});
+            </script>
+</body>
+</html>
